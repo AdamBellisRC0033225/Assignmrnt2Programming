@@ -21,6 +21,10 @@ namespace Assignmrnt2Programming
         {
             if (comboBox1.SelectedIndex == 0)
             {
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+
                 label3.Hide();
                 textBox3.Hide();
                 label4.Hide();
@@ -30,6 +34,9 @@ namespace Assignmrnt2Programming
             }
             else if (comboBox1.SelectedIndex == 1)
             {
+                textBox4.Text = "";
+                textBox5.Text = "";
+
                 label4.Hide();
                 textBox4.Hide();
                 label5.Hide();
@@ -40,6 +47,8 @@ namespace Assignmrnt2Programming
             }
             else if (comboBox1.SelectedIndex == 2)
             {
+                textBox5.Text = "";
+
                 label5.Hide();
                 textBox5.Hide();
 
@@ -108,7 +117,15 @@ namespace Assignmrnt2Programming
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            double R1, R2, R3, R4, R5;
+            try
+            {
+                R3 = Convert.ToDouble(textBox3.Text);
+            }
+            catch
+            {
+                R3 = 0;
+            }
         }
     }
 }
