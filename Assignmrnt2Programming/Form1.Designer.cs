@@ -84,7 +84,6 @@
             this.Parallel.TabIndex = 1;
             this.Parallel.Text = "Parallel";
             this.Parallel.UseVisualStyleBackColor = true;
-            this.Parallel.Click += new System.EventHandler(this.Parallel_Click);
             // 
             // Answer
             // 
@@ -94,7 +93,6 @@
             this.Answer.Size = new System.Drawing.Size(42, 13);
             this.Answer.TabIndex = 12;
             this.Answer.Text = "Answer";
-            this.Answer.Click += new System.EventHandler(this.Answer_Click);
             // 
             // button2
             // 

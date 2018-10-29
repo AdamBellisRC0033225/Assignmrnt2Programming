@@ -209,10 +209,5 @@ namespace Assignmrnt2Programming
             double r = 1.0 / rrt;
             Answer.Text = "Answer = " + r;
         }
-
-        private void Answer_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
