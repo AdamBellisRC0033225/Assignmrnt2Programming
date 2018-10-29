@@ -72,6 +72,10 @@ namespace Assignmrnt2Programming
         {
             if (comboBox2.SelectedIndex == 0)
             {
+                textBox8.Text = "";
+                textBox9.Text = "";
+                textBox10.Text = "";
+
                 label8.Hide();
                 textBox8.Hide();
                 label9.Hide();
@@ -81,6 +85,9 @@ namespace Assignmrnt2Programming
             }
             else if (comboBox2.SelectedIndex == 1)
             {
+                textBox9.Text = "";
+                textBox10.Text = "";
+
                 label9.Hide();
                 textBox9.Hide();
                 label10.Hide();
@@ -91,6 +98,8 @@ namespace Assignmrnt2Programming
             }
             else if (comboBox2.SelectedIndex == 2)
             {
+                textBox10.Text = "";
+
                 label10.Hide();
                 textBox10.Hide();
 
@@ -126,6 +135,84 @@ namespace Assignmrnt2Programming
             {
                 R3 = 0;
             }
+            try
+            {
+                R4 = Convert.ToDouble(textBox4.Text);
+            }
+            catch
+            {
+                R4 = 0;
+            }
+            try
+            {
+                R5 = Convert.ToDouble(textBox5.Text);
+            }
+            catch
+            {
+                R5 = 0;
+            }
+            R1 = Convert.ToDouble(textBox1.Text);
+            R2 = Convert.ToDouble(textBox2.Text);
+            double R = R1 + R2 + R3 + R4 + R5;
+            Answer1.Text = "Answer = " + R;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double r1, r2, r3, r4, r5;
+            double rrt = 0;
+            try
+            {
+                r1 = Convert.ToDouble(textBox6.Text);
+                rrt = rrt + 1.0 / r1;
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                r2 = Convert.ToDouble(textBox7.Text);
+                rrt = rrt + 1.0 / r2;
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                r3 = Convert.ToDouble(textBox8.Text);
+                rrt = rrt + 1.0 / r3;
+            }
+            catch
+            {
+                
+            }
+            try
+            {
+                r4 = Convert.ToDouble(textBox9.Text);
+                rrt = rrt + 1.0 / r4;
+            }
+            catch
+            {
+               
+            }
+            try
+            {
+                r5 = Convert.ToDouble(textBox10.Text);
+                rrt = rrt + 1.0 / r5;
+            }
+            catch
+            {
+               
+            }
+            double r = 1.0 / rrt;
+            Answer.Text = "Answer = " + r;
+        }
+
+        private void Answer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
