@@ -17,6 +17,7 @@ namespace Assignmrnt2Programming
             InitializeComponent();
         }
 
+        // This section of the code is the combo box for the series. This hides all the text boxes and labels that the user doesnt want to see or use.
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
@@ -67,7 +68,7 @@ namespace Assignmrnt2Programming
                 textBox5.Show();
             }
         }
-
+        // This section of the code is the combo box for the parallel. This hides all the text boxes and labels that the user doesnt want to see or use.
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox2.SelectedIndex == 0)
@@ -123,7 +124,7 @@ namespace Assignmrnt2Programming
         {
 
         }
-
+        // This part of the code does the equation for the series circuit. Without each section it wouldnt work correctly. It also displayes the answer. 
         private void button1_Click(object sender, EventArgs e)
         {
             double R1, R2, R3, R4, R5;
@@ -156,7 +157,7 @@ namespace Assignmrnt2Programming
             double R = R1 + R2 + R3 + R4 + R5;
             Answer1.Text = "Answer = " + R;
         }
-
+        // This part of the code does the equation for the parallel circuit. Without each section it wouldnt work correctly. It also displayes the answer. 
         private void button2_Click(object sender, EventArgs e)
         {
             double r1, r2, r3, r4, r5;
