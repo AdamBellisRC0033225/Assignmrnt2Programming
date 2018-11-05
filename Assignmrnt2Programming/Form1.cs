@@ -152,8 +152,22 @@ namespace Assignmrnt2Programming
             {
                 R5 = 0;
             }
-            R1 = Convert.ToDouble(textBox1.Text);
-            R2 = Convert.ToDouble(textBox2.Text);
+            try
+            {
+                R1 = Convert.ToDouble(textBox1.Text);
+            }
+            catch
+            {
+                R1 = 0;
+            }
+            try
+            {
+                R2 = Convert.ToDouble(textBox2.Text);
+            }
+            catch
+            {
+                R2 = 0;
+            }
             double R = R1 + R2 + R3 + R4 + R5;
             Answer1.Text = "Answer = " + R;
         }
